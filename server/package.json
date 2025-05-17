@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server",
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reinert-Lucas/plataforma-escolar.git"
+  },
+  "author": "Reinert Lucas Iván",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Reinert-Lucas/plataforma-escolar/issues"
+  },
+  "homepage": "https://github.com/Reinert-Lucas/plataforma-escolar#readme",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  }
+}

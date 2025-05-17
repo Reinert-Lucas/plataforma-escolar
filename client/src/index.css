@@ -1,3 +1,23 @@
-/* :root {
-  
-} */
+:root {
+  /* Colores principales */
+  --color-primary: #3B82F6;        /* Azul suave */
+  --color-background: #F9FAFB;     /* Gris muy claro */
+  --color-surface: #FFFFFF;        /* Blanco puro */
+  --color-border: #E5E7EB;         /* Gris claro */
+  --color-text-primary: #1F2937;   /* Gris oscuro */
+  --color-text-secondary: #6B7280; /* Gris medio */
+
+  /* Extras */
+  --color-shadow: rgba(0, 0, 0, 0.05);
+  --radius-base: 0.5rem;
+  --transition-default: 0.2s ease-in-out;
+
+  /* Tipografías */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

@@ -17,10 +17,10 @@ function Login() {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({user, pass}),
+                body: JSON.stringify({ user, pass }),
             });
             const data = await response.json();
-            if(data.success) {
+            if (data.success) {
                 navigate(data.redirTo);
             } else {
                 setErrMsg(data.message);
@@ -30,16 +30,21 @@ function Login() {
         }
     }
 
-    return(
+    return (
         <>
-            <form onSubmit={handleSubmit}>
-                <h1>Iniciar Sesion</h1>
-                <input type="text" placeholder='Usuario' value={user} onChange={e => setUser(e.target.value)} />
-                <input type="password" placeholder='Contraseña' value={pass} onChange={e => setPass(e.target.value)} />
-                <span id='errMessage'>{errMsg}</span>
-                <button>Ingresar con Google</button>
-                <input type="submit" value="Iniciar Sesion" />
-            </form>
+            <section className='loginSection'>
+                <form onSubmit={handleSubmit} className='loginForm'>
+                    <h1>Iniciar Sesión</h1>
+                    <input type="text" placeholder='Usuario' value={user} onChange={e => setUser(e.target.value)} className='loginInput' />
+                    <input type="password" placeholder='Contraseña' value={pass} onChange={e => setPass(e.target.value)} className='loginInput' />
+                    <span id='errMessage'>{errMsg}</span>
+                    <section className='loginExtras'>
+                        <span className='keepLogin'><input type="checkbox"/>Recordar</span>
+                        <button className='googleOauth'>GOG</button>
+                    </section>
+                    <input type="submit" value="Iniciar Sesion" className='sbmt' />
+                </form>
+            </section>
         </>
     )
 }

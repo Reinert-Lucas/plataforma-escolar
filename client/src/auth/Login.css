@@ -1,0 +1,70 @@
+.loginSection{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginForm {
+    width: 75%;
+    max-width: 350px;
+    height: auto;
+    padding: 2rem .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: var(--radius-base);
+    background-color: var(--color-primary);
+}
+
+.loginForm h1 {
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 30px;
+}
+.loginInput {
+    width: 80%;
+    height: 2rem;
+    margin: 1rem 0 0 0;
+    padding: .5rem;
+    border: none;
+    font-weight: bold;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    border-radius: var(--radius-base);
+}
+.loginExtras {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: auto;
+    padding: 5px 0;
+    margin: .5rem 0 0 0;
+}
+.googleOauth {
+    height: 35px;
+    width: auto;
+    padding: 5px;
+    text-wrap: wrap;
+}
+.keepLogin {
+    font-size: 14px;
+    font-weight: bold;
+}
+.keepLogin input {
+    width: auto;
+    height: auto;
+    margin: 0 1px 0 0;
+}
+.sbmt {
+    width: 40%;
+    height: 2rem;
+    margin: 1rem 0 0 0;
+    padding: .5rem;
+    border: none;
+    font-weight: bold;
+    color: var(--color-text-secondary);
+    background-color: var(--color-background);
+    border-radius: var(--radius-base);
+}

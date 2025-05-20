@@ -1,0 +1,13 @@
+.mainSect {
+    min-height: 100vh;
+    display: grid;
+    grid-template:
+    'header' 16vh
+    'main' 
+    'footer'
+    ;
+}
+main {
+    grid-area: main;
+    min-height: 80vh;
+}

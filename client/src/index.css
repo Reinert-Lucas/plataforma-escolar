@@ -10,7 +10,7 @@
   /* Extras */
   --color-shadow: rgba(0, 0, 0, 0.05);
   --radius-base: 0.5rem;
-  --transition-default: 0.2s ease-in-out;
+  --transition-default: 2s ease-in-out;
 
   /* Tipografías */
   --font-heading: 'Poppins', sans-serif;

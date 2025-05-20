@@ -40,7 +40,6 @@
     width: 80%;
     height: auto;
     padding: 5px 0;
-    margin: .5rem 0 0 0;
 }
 .googleOauth {
     height: 35px;
@@ -67,4 +66,9 @@
     color: var(--color-text-secondary);
     background-color: var(--color-background);
     border-radius: var(--radius-base);
+}
+.errMessage {
+    margin: .5rem 0 0 0;
+    color: rgb(131, 255, 193);
+    font-weight: bold;
 }

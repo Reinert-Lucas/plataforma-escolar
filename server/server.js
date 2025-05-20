@@ -36,7 +36,7 @@ app.post('/auth/login', async (req, res) => {
         }
         res.send({message: 'Ok', success: true, redirTo: redir})
     } else {
-        res.json({message: 'User/Pass mal', success: false, redirTo: '/dashboard/admin'})
+        res.json({message: 'Usuario y/o Contraseña Incorrectos', success: false, redirTo: '/dashboard/admin'})
     }
 });
 

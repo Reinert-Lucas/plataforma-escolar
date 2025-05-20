@@ -37,7 +37,7 @@ function Login() {
                     <h1>Iniciar Sesión</h1>
                     <input type="text" placeholder='Usuario' value={user} onChange={e => setUser(e.target.value)} className='loginInput' />
                     <input type="password" placeholder='Contraseña' value={pass} onChange={e => setPass(e.target.value)} className='loginInput' />
-                    <span id='errMessage'>{errMsg}</span>
+                    <span id='errMessage' className='errMessage'>{errMsg}</span>
                     <section className='loginExtras'>
                         <span className='keepLogin'><input type="checkbox"/>Recordar</span>
                         <button className='googleOauth'>GOG</button>

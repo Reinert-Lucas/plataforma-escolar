@@ -1,0 +1,6 @@
+.navbar {
+    background-color: var(--color-primary);
+}
+.navbar-toggler {
+    transition: var(--transition-default);
+}
